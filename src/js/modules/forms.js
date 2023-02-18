@@ -41,7 +41,7 @@ const forms = () => {
 
             const formData = new FormData(item);
 
-            postData('assets/server.php')
+            postData('assets/server.php', formData)
                 .then(res => {
                     statusMessage.textContent = message.success;
                 })
