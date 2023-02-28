@@ -1804,6 +1804,12 @@ textarea:focus {
   }
 }
 
+.resized {
+  height: 60%;
+  width: 60%;
+  object-fit: cover;
+}
+
 /* small devices, tablets */
 @media only screen and (max-width: 768px) {
   .animated {
@@ -1816,5 +1822,11 @@ textarea:focus {
     /*css animations*/
     -webkit-animation: none !important;
     animation: none !important;
+  }
+
+  .resized {
+    height: 50%;
+    width: 85%;
+    object-fit: cover;
   }
 }
